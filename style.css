@@ -47,17 +47,23 @@ header {
   position: relative;
 }
 
-header nav ul {
+nav ul {
   display: flex;
   gap: 4rem;
   list-style: none;
   font-size: 2rem;
 }
 
+footer {
+  padding: 4.8rem;
+  opacity: 0;
+}
+
 .author-name {
   position: absolute;
   top: 4.8rem;
-  left: 45%;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 2.4rem;
 }
 
@@ -161,6 +167,15 @@ a:visited {
     display: inline-block;
     padding-top: 4.8rem;
   }
+  header nav ul li {
+    display: none;
+  }
+  footer {
+    opacity: 1;
+  }
+  footer nav ul {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 600px) {
@@ -176,8 +191,15 @@ a:visited {
     font-size: 1.4rem;
   }
 
-  nav ul li {
+  header nav ul li {
     display: none;
+  }
+
+  footer {
+    opacity: 1;
+  }
+  footer nav ul {
+    justify-content: center;
   }
 
   .texts {
@@ -200,7 +222,6 @@ a:visited {
   }
 
   .author-name {
-    left: 45%;
     font-size: 2rem;
   }
 }
