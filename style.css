@@ -17,6 +17,8 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   /* background-color: #d8ffdd; */
   background-color: #e9ecef;
+  background-color: #e7f5ff;
+  /* background-color: #f1f3f5; */
   overflow-x: hidden;
 }
 
@@ -113,6 +115,15 @@ a:visited {
 
 .events-list ul li a {
   text-decoration: underline;
+}
+
+nav ul li a:link,
+a:visited {
+  color: #222;
+}
+
+.madein {
+  font-size: 1.6rem;
 }
 
 @media (max-width: 1160px) {
@@ -228,4 +239,34 @@ a:visited {
   .author-name {
     font-size: 2rem;
   }
+}
+
+.inspo-box .inspos-links,
+.inspo-box .inspo-text {
+  padding: 2rem 4rem;
+  width: 100%;
+}
+
+.inspos-links ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.inspos-links ul li {
+  padding: 1rem;
+  border-radius: 5px;
+  color: #262730;
+}
+.inspos-links ul li a:link,
+.inspos-links ul li a:visited {
+  color: #262730;
+}
+.inspos-links ul li:link,
+.inspos-links ul li:visited {
+  transition: all ease 0.5s;
+}
+.inspos-links ul li:hover,
+.inspos-links ul li:active {
+  background-color: #dee2e6;
 }
