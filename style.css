@@ -111,6 +111,10 @@ a:visited {
   margin-bottom: 1rem;
 }
 
+.events-list ul li a {
+  text-decoration: underline;
+}
+
 @media (max-width: 1160px) {
   .container {
     margin: 4rem;
